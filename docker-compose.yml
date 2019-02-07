@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+
+  euud27:
+    build:
+      context: .
+      dockerfile: ./srv/Dockerfile
+    volumes:
+      - ./www:/usr/share/nginx/html
+    ports:
+      - "80:80"
+

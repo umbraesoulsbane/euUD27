@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'AvatarWeb';
+    src: url('/fonts/avatar/avatar-webfont.woff2') format('woff2'),
+         url('/fonts/avatar/avatar-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Runes2Web';
+    src: url('/fonts/britannian_runes2/britannian_runes_ii-webfont.woff2') format('woff2'),
+         url('/fonts/britannian_runes2/britannian_runes_ii-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body { 
+	background: rgb(2, 55, 69); 
+	background-color: #00011d;
+	background-image:url('images/background01.png');
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: top center;
+	margin: 0; padding: 0;
+}
+body, div { color: White; font-size: 2vw; font-family: 'MedievalSharp', cursive; }
+a { color: #da9278; border-bottom: 2px solid #da9278; text-decoration: none; }
+a:visited { color: #da9278; }
+a:hover { color: #9f6873; border-bottom: 2px solid #9f6873; }
+
+div { overflow: visible; }
+img { border: none; }
+h1 { color: #c8856d; font-size: 2em; margin-bottom: 0; }
+
+#eventName h1 { font-family: 'AvatarWeb'; text-rendering: optimizeLegibility;
+font-size: 2.5em;
+	letter-spacing: .25em;
+	
+}
+#subText { font-family: 'Runes2Web'; font-size: 1.5em; }
+
+
+h2 { font-size: 1.75em; }
+h3 { font-size: 1.25em; }
+p { line-height: 1.25em; }
+
+#udiclogo, #logo { max-width: 686px; width: 90%; height: auto; display: block; margin-left: auto; margin-right: auto; }
+
+.truecenter { margin: 0 auto; }
+.center { text-align: center; }
+.small { font-size: .75em; }
+.content {
+	background: rgba(0.0, 0.4, 11.4, .6);
+	padding: 3em 1.25em;
+	margin: 0px auto;
+	width: 100%;
+	max-width: 900px;
+}
+
+
+/* Style the navbar */
+#navbar {
+	margin: 0 auto;
+	max-width: 900px;
+	overflow: hidden;
+	padding: 0 1.25em;
+	background-color: #333;
+	background: rgba(0.0, 0.4, 11.4, .8);
+}
+#navbar .left {
+	float:left;
+}
+#navbar .right {
+	float:right;
+}
+
+/* Navbar links */
+#navbar a {
+	float: left;
+	display: block;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+	font-size: .5em;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+	position: fixed;
+	top: 0;
+	left:0; right:0;
+	width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+	padding-top: 60px;
+}
+
+
+.mapouter { 
+	text-align:right;
+	height:500px;
+	width:100%;
+	max-width: 700px;
+	margin: 0 auto;
+}
+#gmap_canvas { 
+	height:500px;
+	width:100%;
+}
+.gmap_canvas { 
+	overflow:hidden;
+	background:none !important;
+	height:500px;
+	width:100%;
+}
+
+@media screen and (max-width: 1028px) {
+	.content div.normal {
+		padding: 0 3em;
+	}
+	.content { padding: 0; }
+	#navbar a {
+		font-size: 1em;
+	}
+	#navbar {
+		padding: 0;
+	}
+}
+
+
+
+/*
+@media screen and (min-width: 601px) {
+  div.example {
+    font-size: 80px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 30px;
+  }
+}
+*/
